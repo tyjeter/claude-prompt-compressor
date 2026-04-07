@@ -41,7 +41,7 @@ cp compress_prompt.py ~/.claude/compress_prompt.py
 
 ## How it works
 
-The hook intercepts every prompt via the `UserPromptSubmit` event. If compression saves characters, the compressed version is injected as additional context for the model to use.
+The hook intercepts every prompt via the `UserPromptSubmit` event. If compression saves characters, the compressed version is injected as additional context for the model to use. Further testing and benchmarks will be provided soon :3
 
 Prompts containing code blocks or over 2000 characters are skipped automatically.
 
