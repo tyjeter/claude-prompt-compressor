@@ -132,8 +132,8 @@ _REDUNDANCY_RE = [(re.compile(p, re.IGNORECASE), r) for p, r in _REDUNDANCIES]
 _WHITESPACE_RE = re.compile(r"[ \t]+")
 _BLANK_LINES_RE = re.compile(r"\s*\n\s*\n\s*\n+")
 
-# Matches fenced code blocks: ```...```
-_CODE_BLOCK_RE = re.compile(r"(```[\s\S]*?```)", re.MULTILINE)
+# Matches fenced code blocks (```...```) and inline code spans (`...`)
+_CODE_BLOCK_RE = re.compile(r"(```[\s\S]*?```|`[^`\n]+`)", re.MULTILINE)
 
 
 # ---------------------------------------------------------------------------
