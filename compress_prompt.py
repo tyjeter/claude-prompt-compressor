@@ -48,6 +48,26 @@ _FILLER_PHRASES = [
     r"cheers[.!]?\s*",
     r"at (your )?earliest convenience\s*",
     r"as soon as (you can|possible)\s*",
+    # Filler adverbs — add no semantic value
+    r"\bbasically\b,?\s*",
+    r"\bessentially\b,?\s*",
+    r"\bliterally\b,?\s*",
+    r"\bactually\b,?\s*",
+    r"\bobviously\b,?\s*",
+    r"\bclearly\b,?\s*",
+    r"\bhonestly\b,?\s*",
+    r"\bfrankly\b,?\s*",
+    r"\bsimply\b,?\s*",
+    r"to be honest[,.]?\s*",
+    r"to be fair[,.]?\s*",
+    r"at the end of the day[,.]?\s*",
+    r"having said that[,.]?\s*",
+    r"that (being )?said[,.]?\s*",
+    r"just so you know[,.]?\s*",
+    r"for what it'?s? worth[,.]?\s*",
+    r"(as )?i mentioned( before)?\s*",
+    r"(as )?i said( before)?\s*",
+    r"(as )?i noted( before)?\s*",
 ]
 
 _COMPRESSIONS = [
